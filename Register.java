@@ -40,20 +40,18 @@ class Register {
     }
 //to add items to the queue
     
-    void enqueue(Customer customer) {
+      void enqueue(Customer customer) {
         Node oldCustomer = last;
         last = new Node();
         last.customer = customer;
         last.next = null;
-        oldCustomer.next = last; 
-        
         if (isEmpty()){
         first = last;
         } else{
         oldCustomer.next = last;
         }
         
-        n++;
+        n++; 
         
     }
 //to remove items from the queue
